@@ -1,1 +1,27 @@
+.bg-rgb-pink {
+  background-color: rgb(247, 214, 230);
+}
+
+.btn-rgb-pink{
+  background-color: rgb(171, 41, 106) ;
+
+}
+
+.btn-text-light{
+  color: aliceblue;
+}
+
+.custom-color{
+  color: rgb(171, 41, 106);
+}
+
+.btn-hover:hover{
+  background-color: rgb(169, 41, 100);
+}
+
+.input-focus:focus{
+  border-color:rgb(171, 41, 106);
+  box-shadow: 0 0 0 0.2rem rgba(171, 41, 106, 0.25);
+
+}
 /* You can add global styles to this file, and also import other style files */
