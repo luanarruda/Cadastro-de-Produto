@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "arroz",
+      "desc": "grão",
+      "price": 1,
+      "qnt": 1
+    },
+    {
+      "id": "2",
+      "name": "feijão",
+      "desc": "grão",
+      "price": 1,
+      "qnt": 1
+    },
+    {
+      "id": "3",
+      "name": "soja",
+      "desc": "grão",
+      "price": 1,
+      "qnt": 1
+    },
+    {
+      "id": "w",
+      "name": "w",
+      "desc": "w",
+      "price": "w",
+      "qnt": "w"
+    }
+  ]
+}
