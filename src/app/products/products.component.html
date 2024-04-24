@@ -1,0 +1,78 @@
+<div class="p-4 bg-rgb">
+  <div class="row">
+    <div class="col-12 col-md-6 m-auto bg-rgb shadow p-3 rounded">
+          <form [formGroup]="formGroupProduct">
+              <h1 class="custom-color mb-4 text-center">Cadastro de Produto</h1>
+              <hr>
+          <div class="row">
+              <div class="col-3">
+                  <!--Código-->
+                  <div class="mb-3">
+                      <label for="codigo" class="form-label custom-label">Código</label>
+                      <input type="text" class="form-control border-color input-focus " id="codigo"
+                      formControlName = "id">
+                  </div>
+              </div>
+              <div class="col">
+                  <!--Nome-->
+                  <div class="mb-3">
+                      <label for="nome" class="form-label custom-label">Nome</label>
+                      <input type="text" class="form-control border-color input-focus" id="nome" formControlName = "name">
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <!--Descrição-->
+              <div class="mb-3">
+                  <label for="descricao" class="form-label custom-label">Descrição</label>
+                  <input type="text" class="form-control border-color input-focus" id="descricao" formControlName = "desc">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col">
+                  <!--Preço-->
+                  <div class="mb-3">
+                      <label for="preco" class="form-label custom-label">Preço</label>
+                      <input type="text" class="form-control border-color input-focus" id="preco" formControlName = "price">
+                  </div>
+              </div>
+              <div class="col">
+                  <!--Quantidade-->
+                  <div class="mb-3">
+                      <label for="quantidade" class="form-label custom-label">Quantidade</label>
+                      <input type="text" class="form-control border-color input-focus" id="quantidade" formControlName = "qnt">
+                  </div>
+              </div>
+          </div>
+          <!--button-->
+          <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-rgb btn-text-light btn-hover shadow-sm mt-3 " (click)="save()">Salvar</button>
+          </div>
+        </form>
+        <!--tabela-->
+        <hr>
+        <h2 class="custom-color mb-2 mt-2 text-center">Produtos</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <th scope="row">{{product.id}}</th>
+              <td>{{product.name}}</td>
+              <td>{{product.desc}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.qnt}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+</div>

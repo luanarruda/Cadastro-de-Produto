@@ -1,10 +1,18 @@
-.bg-rgb-pink {
-  background-color: rgb(247, 214, 230);
+.bg-rgb {
+  background-color: #FFE3E0;
 }
 
-.btn-rgb-pink{
-  background-color: rgb(171, 41, 106) ;
+.border-color{
+  border-color: #F7A399;
+}
 
+.btn-rgb{
+  background-color:#EF6351;
+
+}
+
+.btn-hover:hover{
+  background-color: #F59B8F;
 }
 
 .btn-text-light{
@@ -12,16 +20,16 @@
 }
 
 .custom-color{
-  color: rgb(171, 41, 106);
+  color: #EF6351;
 }
 
-.btn-hover:hover{
-  background-color: rgb(169, 41, 100);
-}
 
 .input-focus:focus{
-  border-color:rgb(171, 41, 106);
-  box-shadow: 0 0 0 0.2rem rgba(171, 41, 106, 0.25);
+  border-color: #F7A399;
+  box-shadow: 0 0 0 0.2rem #F7A399;
+}
 
+.custom-label {
+  color: #0D324D;
 }
 /* You can add global styles to this file, and also import other style files */
