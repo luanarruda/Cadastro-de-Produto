@@ -1,32 +1,25 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "arroz",
-      "desc": "grão",
-      "price": 1,
-      "qnt": 1
+      "id": 1,
+      "name": "teste1",
+      "desc": "teste",
+      "price": "1",
+      "qnt": "2"
     },
     {
-      "id": "2",
-      "name": "feijão",
-      "desc": "grão",
-      "price": 1,
-      "qnt": 1
+      "id": 2,
+      "name": "teste2",
+      "desc": "teste",
+      "price": "1",
+      "qnt": "2"
     },
     {
-      "id": "3",
-      "name": "soja",
-      "desc": "grão",
-      "price": 1,
-      "qnt": 1
-    },
-    {
-      "id": "w",
-      "name": "w",
-      "desc": "w",
-      "price": "w",
-      "qnt": "w"
+      "id": 3,
+      "name": "teste 3",
+      "desc": "teste",
+      "price": "12",
+      "qnt": "2"
     }
   ]
 }

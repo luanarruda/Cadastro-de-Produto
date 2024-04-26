@@ -5,14 +5,7 @@
               <h1 class="custom-color mb-4 text-center">Cadastro de Produto</h1>
               <hr>
           <div class="row">
-              <div class="col-3">
-                  <!--Código-->
-                  <div class="mb-3">
-                      <label for="codigo" class="form-label custom-label">Código</label>
-                      <input type="text" class="form-control border-color input-focus " id="codigo"
-                      formControlName = "id">
-                  </div>
-              </div>
+
               <div class="col">
                   <!--Nome-->
                   <div class="mb-3">
@@ -60,6 +53,7 @@
               <th scope="col">Descrição</th>
               <th scope="col">Preço</th>
               <th scope="col">Quantidade</th>
+              <th scope="col" class="d-flex justify-content-center">Opções</th>
             </tr>
           </thead>
           <tbody>
@@ -69,6 +63,10 @@
               <td>{{product.desc}}</td>
               <td>{{product.price}}</td>
               <td>{{product.qnt}}</td>
+              <td class="d-flex justify-content-end">
+                <button class="btn btn-rgb btn-text-light btn-hover" type="button" (click)="edit(product)">Alterar</button>
+                <button class="btn btn-danger ms-3" type="button" (click)="delete(product)">Remover </button>
+              </td>
             </tr>
           </tbody>
         </table>
