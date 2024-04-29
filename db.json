@@ -2,24 +2,10 @@
   "products": [
     {
       "id": 1,
-      "name": "teste1",
-      "desc": "teste",
-      "price": "1",
-      "qnt": "2"
-    },
-    {
-      "id": 2,
-      "name": "teste2",
-      "desc": "teste",
-      "price": "1",
-      "qnt": "2"
-    },
-    {
-      "id": 3,
-      "name": "teste 3",
-      "desc": "teste",
-      "price": "12",
-      "qnt": "2"
+      "name": "dsdsd",
+      "desc": "",
+      "price": 900,
+      "qnt": 9
     }
   ]
 }
