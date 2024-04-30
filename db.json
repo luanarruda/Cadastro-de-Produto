@@ -1,11 +1,3 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "dsdsd",
-      "desc": "",
-      "price": 900,
-      "qnt": 9
-    }
-  ]
+  "products": []
 }

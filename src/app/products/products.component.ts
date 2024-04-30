@@ -12,7 +12,6 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   formGroupProduct: FormGroup;
   isEditing: boolean = false;
-  submited: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -38,26 +37,24 @@ export class ProductsComponent implements OnInit {
   }
 
   save() {
-    this.submited = true;
+
     if (this.formGroupProduct.valid) {
       if (this.isEditing) {
         this.service.update(this.formGroupProduct.value).subscribe({
           next: () => {
             this.loadProducts();
             this.isEditing = false;
-            this.submited = false;
+            this.formGroupProduct.reset();
           },
         });
       } else {
         this.service.save(this.formGroupProduct.value).subscribe({
           next: (data) => {
             this.products.push(data);
-            this.submited = false;
+            this.formGroupProduct.reset();
           }
         });
       }
-
-      this.formGroupProduct.reset();
     }
   }
   delete(product: Product) {

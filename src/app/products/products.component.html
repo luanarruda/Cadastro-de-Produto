@@ -11,10 +11,10 @@
                   <div class="mb-3">
                       <label for="nome" class="form-label custom-label">Nome</label>
                       <input type="text" class="form-control border-color input-focus" id="nome" formControlName = "name">
-                    <small *ngIf="submited && name.hasError('minlength')" class="text-danger">
+                    <small *ngIf="name.touched && name.hasError('minlength')" class="text-danger">
                       *O nome tem que ter no mínimo 3 caracteres
                     </small>
-                    <small *ngIf="submited && name.hasError('required')" class="text-danger">
+                    <small *ngIf="name.touched && name.hasError('required')" class="text-danger">
                       *O nome é requirido!
                     </small>
                   </div>
@@ -33,10 +33,10 @@
                   <div class="mb-3">
                       <label for="preco" class="form-label custom-label">Preço</label>
                       <input type="number" class="form-control border-color input-focus" id="preco" formControlName = "price">
-                      <small *ngIf="submited && price.hasError('required')" class="text-danger">
+                      <small *ngIf="price.touched && price.hasError('required')" class="text-danger">
                         *O preço é requirido
                       </small>
-                      <small *ngIf="submited && price.hasError('pattern')" class="text-danger">
+                      <small *ngIf="price.touched && price.hasError('pattern')" class="text-danger">
                         *Somente números são permitidos
                       </small>
                   </div>
@@ -46,10 +46,10 @@
                   <div class="mb-3">
                       <label for="quantidade" class="form-label custom-label">Quantidade</label>
                       <input type="number" class="form-control border-color input-focus" id="quantidade" formControlName = "qnt">
-                      <small *ngIf="submited && qnt.hasError('required')" class="text-danger">
+                      <small *ngIf="qnt.touched && qnt.hasError('required')" class="text-danger">
                         *A quantidade é requirida
                       </small>
-                      <small *ngIf="submited && qnt.hasError('pattern')" class="text-danger">
+                      <small *ngIf="qnt.touched && qnt.hasError('pattern')" class="text-danger">
                         *Somente números são permitidos
                       </small>
                     </div>
@@ -57,7 +57,15 @@
           </div>
           <!--button-->
           <div class="text-center d-grid gap-2">
-            <button type="submit" class="btn btn-rgb btn-text-light btn-hover shadow-sm mt-3 " (click)="save()">Salvar</button>
+            <button
+            type="submit"
+            class="btn btn-rgb btn-text-light btn-hover shadow-sm mt-3"
+            [disabled]="!formGroupProduct.valid"
+            (click)="save()">
+
+            Salvar
+            
+          </button>
           </div>
         </form>
         <!--tabela-->
